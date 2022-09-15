@@ -4,7 +4,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <!-- Package info -->
         <PackageId>SeriIog.Sinks.Channels</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Authors>c0nd3v</Authors>
         <Title>Serilog.Sinks.Channels</Title>
         <Description></Description>

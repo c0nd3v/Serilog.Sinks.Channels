@@ -37,11 +37,8 @@ namespace Serilog.Sinks.Channels
 
 		private async Task PumpAsync()
 		{
-			while (await _logChannel.Reader.WaitToReadAsync())
-			{
-				await foreach (var logEvent in _logChannel.Reader.ReadAllAsync())
-					_wrappedSink.Emit(logEvent);
-			}
+			await foreach (var logEvent in _logChannel.Reader.ReadAllAsync())
+				_wrappedSink.Emit(logEvent);
 		}
 	}
 }
